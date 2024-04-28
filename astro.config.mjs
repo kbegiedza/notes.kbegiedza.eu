@@ -9,26 +9,26 @@ export default defineConfig({
     title: 'notes.kbegiedza.eu',
     social: {
       github: 'https://github.com/kbegiedza/notes.kbegiedza.eu'
-    },
-    sidebar: [{
-      label: 'Languages',
-      autogenerate: {
-        directory: 'languages'
-      }
-      // items: [
-      // 	// Each item here is one entry in the navigation menu.
-      // 	{ label: 'Example Guide', link: '/guides/example/' },
-      // ],
-    }, {
-      label: 'Databases',
-      autogenerate: {
-        directory: 'databases'
-      }
-    }, {
-      label: 'Reference',
-      autogenerate: {
-        directory: 'reference'
-      }
-    }]
-  })]
+    })
+    // sidebar: [{
+      //   label: 'Languages',
+      //   autogenerate: {
+        //     directory: 'languages'
+        //   }
+        //   items: [
+    //   	// Each item here is one entry in the navigation menu.
+    //   	{ label: 'Example Guide', link: '/guides/example/' },
+    //   ],
+    // }, {
+      //   label: 'Databases',
+      //   autogenerate: {
+        //     directory: 'databases'
+        //   }
+        // }, {
+    //   label: 'Reference',
+    //   autogenerate: {
+    //     directory: 'reference'
+    //   }
+    // }]
+  ]
 });
