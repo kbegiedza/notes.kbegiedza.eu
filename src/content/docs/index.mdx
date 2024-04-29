@@ -3,16 +3,16 @@ title: Welcome to notes!
 description: Get started building your docs site with Starlight.
 template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
+  tagline: Ready to learn something new?
   image:
     file: ../../assets/houston.webp
   actions:
-    - text: Show me the notes!
+    - text: Take me to the notes!
       link: /getting-started
       icon: right-arrow
       variant: primary
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
+    - text: I want to contribute
+      link: https://github.com/kbegiedza/notes.kbegiedza.eu/
       icon: external
 sidebar:
     order: -1
@@ -23,17 +23,17 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
 
 ## Next steps
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+<CardGrid>
+  <Card title="Accelerate your growth!" icon="rocket">
+    Learn fundamental concepts and gain the tools, tips, and strategies you need to thrive.
+  </Card>
+  <Card title="Unlock a world of insights!" icon="open-book">
+    Explore meticulously crafted content authored by industry professionals.
+  </Card>
+  <Card title="Challenge yourself with quizes" icon="setting">
+    Practise what you've learned by solving interactive challenges.
+  </Card>
+  <Card title="Collaborate and share knowledge" icon="add-document">
+    Want to support our mission? Feel free to [contribute](https://github.com/kbegiedza/notes.kbegiedza.eu/).
+  </Card>
 </CardGrid>

@@ -23,7 +23,7 @@ export default defineConfig(
             }
           },
           {
-            label: '.NET Specialist',
+            label: '.NET Engineer',
             collapsed: true,
             autogenerate:
             {
