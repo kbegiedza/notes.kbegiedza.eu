@@ -1,0 +1,24 @@
+---
+template: "doc";
+
+const { frontmatter, url } = Astro.props;
+---
+
+<p>UP</p>
+<slot />
+<script
+  src="https://giscus.app/client.js"
+  data-repo="kbegiedza/notes.kbegiedza.eu"
+  data-repo-id="R_kgDOLFQOMw"
+  data-category="General"
+  data-category-id="DIC_kwDOLFQOM84Ceutc"
+  data-mapping="pathname"
+  data-strict="0"
+  data-reactions-enabled="1"
+  data-emit-metadata="0"
+  data-input-position="top"
+  data-theme="preferred_color_scheme"
+  data-lang="en"
+  data-loading="lazy"
+  crossorigin="anonymous"
+  async></script>
