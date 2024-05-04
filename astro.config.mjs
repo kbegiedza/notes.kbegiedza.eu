@@ -9,9 +9,19 @@ export default defineConfig(
     integrations: [
       starlight(
       {
-        title: 'notes.kbegiedza.eu',
         social: {
           github: 'https://github.com/kbegiedza/notes.kbegiedza.eu'
+        },
+        title: 'notes.kbegiedza.eu',
+        locales: {
+          root: {
+            label: 'English',
+            lang: 'en-GB'
+          },
+          pl: {
+            label: 'Polski',
+            lang: 'pl-PL'
+          },
         },
         sidebar: [
           {
