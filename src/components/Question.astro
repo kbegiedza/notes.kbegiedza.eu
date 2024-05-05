@@ -7,20 +7,32 @@ interface Option {
 }
 
 interface Props {
+  id: string;
   content: string;
   options: Option[];
 }
 
-const props = Astro.props;
+const options = Astro.props.options;
+const question = Astro.props.content;
+const questionId = Astro.props.id;
+
+const isSingleChoice =
+  options.filter((option) => option.isCorrect).length === 1;
+
+const verifyAnswer = () => {};
 ---
 
-<Card title={props.content}>
+<Card title={question}>
   <ul>
     {
-      props.options.map((option, index) => (
+      options.map((option, index) => (
         <li>
-          <input type="radio" name="quiz" id={`option-${index}`} />
-          <label for={`option-${index}`}>{option.content}</label>
+          <input
+            type={isSingleChoice ? "radio" : "checkbox"}
+            name="quiz"
+            id={`${questionId}-option-${index}`}
+          />
+          <label for={`${questionId}-option-${index}`}>{option.content}</label>
         </li>
       ))
     }
