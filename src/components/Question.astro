@@ -1,0 +1,28 @@
+---
+import { Card, CardGrid } from "@astrojs/starlight/components";
+
+interface Option {
+  content: string;
+  isCorrect: boolean;
+}
+
+interface Props {
+  content: string;
+  options: Option[];
+}
+
+const props = Astro.props;
+---
+
+<Card title={props.content}>
+  <ul>
+    {
+      props.options.map((option, index) => (
+        <li>
+          <input type="radio" name="quiz" id={`option-${index}`} />
+          <label for={`option-${index}`}>{option.content}</label>
+        </li>
+      ))
+    }
+  </ul>
+</Card>
