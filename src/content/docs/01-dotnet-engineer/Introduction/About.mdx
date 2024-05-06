@@ -3,7 +3,7 @@ title: About
 description: Learn about .NET
 ---
 
-import Question from "../../../../components/Question.astro";
+import Question from "../../../../components/Question.tsx";
 
 # .NET
 
@@ -16,39 +16,41 @@ With .NET, you can use multiple languages, editors, and libraries to build for w
 ## Quiz
 
 <Question
-  id={".net-intro-1"}
-  content={"Do you like .NET?"}
-  options={[
-    {
-      content: "yes",
-      isCorrect: true,
-    },
-    {
-      content: "no",
-      isCorrect: false,
-    },
-  ]}
+    client:load
+    id={".net-intro-1"}
+    question={"Do you like .NET?"}
+    options={[
+        {
+            content: "yes",
+            isCorrect: true,
+        },
+        {
+            content: "no",
+            isCorrect: false,
+        },
+    ]}
 ></Question>
 
 <Question
-  id={".net-intro-2"}
-  content={"What you can build with .NET?"}
-  options={[
-    {
-      content: "Cloud microservices",
-      isCorrect: true,
-    },
-    {
-      content: "Console apps",
-      isCorrect: true,
-    },
-    {
-      content: "Mobile & Desktop apps",
-      isCorrect: true,
-    },
-    {
-      content: "Aquarium with goldfish",
-      isCorrect: false,
-    },
-  ]}
+    client:load
+    id={".net-intro-2"}
+    question={"What you can build with .NET?"}
+    options={[
+        {
+            content: "Cloud microservices",
+            isCorrect: true,
+        },
+        {
+            content: "Console apps",
+            isCorrect: true,
+        },
+        {
+            content: "Mobile & Desktop apps",
+            isCorrect: true,
+        },
+        {
+            content: "Aquarium with goldfish",
+            isCorrect: false,
+        },
+    ]}
 ></Question>
