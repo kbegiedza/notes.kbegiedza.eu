@@ -1,0 +1,18 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+
+max_line_length = 120
+
+tab_width = 4
+indent_size = 4
+indent_style = space
+
+[*.{js,jsx,ts,tsx,astro}]
+indent_brace_style = K&R
+
+[*.md]
+max_line_length = 0
+trim_trailing_whitespace = false
