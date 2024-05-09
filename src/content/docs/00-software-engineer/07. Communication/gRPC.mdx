@@ -1,4 +1,39 @@
 ---
-title: Title
-description: Description
+title: gRPC
+description: gRPC - a high performance, open-source universal RPC framework
 ---
+
+:::tip[**gRPC** tl;dr]
+
+-   **High performance** framework that uses **protobuf** to define contracts and generate server and client code.
+-   Use it when building **low latency**, **distributed**, **interoperable** and **highly scalable** systems.
+-   Supports **bi-directional streaming** and **authentication** utilizing **HTTP/2**.
+
+:::
+
+## What is gRPC?
+
+gRPC (**g**RPC **R**emote **P**rocedure **C**all) is a highly performant, modern, open-source RPC framework under the Cloud Native Computing Foundation (CNCF) umberella, created by Google.<br/>
+
+## How does gRPC work?
+
+![gRPC flow](../../../../assets/gRPC/gRPC.png)
+
+Using protocol buffers( proto files containing definitions of data structures) to generate both client and server across multiple supported languages.
+
+-   utilizing http/2
+-   bi-directional communication
+-   interoperability
+-   authorization
+-   deadlines and timeouts
+-   streaming
+-   blocking and non-blocking calls
+
+## When to use it?
+
+Consider using when building systems that should:
+
+-   provide low latency
+-   be distributed
+-   be highly scalable
+-   using multiple languages / technologies
