@@ -7,33 +7,62 @@ description: gRPC - a high performance, open-source universal RPC framework
 
 -   **High performance** framework that uses **protobuf** to define contracts and generate server and client code.
 -   Use it when building **low latency**, **distributed**, **interoperable** and **highly scalable** systems.
--   Supports **bi-directional streaming** and **authentication** utilizing **HTTP/2**.
+-   Supports **bi-directional streaming** and **authentication** utilizing **HTTP/2** protocol.
 
 :::
 
 ## What is gRPC?
 
-gRPC (**g**RPC **R**emote **P**rocedure **C**all) is a highly performant, modern, open-source RPC framework under the Cloud Native Computing Foundation (CNCF) umberella, created by Google.<br/>
+gRPC (**g**RPC **R**emote **P**rocedure **C**all) is a language agnostic, high-performance, modern, open-source RPC framework created by Google and developed under the Cloud Native Computing Foundation umbrella.<br/>
 
-## How does gRPC work?
+## Key aspects of gRPC.
 
-![gRPC flow](../../../../assets/gRPC/gRPC.png)
+-   **High performance** - built on top of HTTP/2 protocol.
+-   **Interoperable** - supports multiple languages and platforms.
+-   **Uses Protobuf** - for fast binary serialization and deserialization.
+-   **Multiple communication strategies** - unary, single and bi-directional streaming.
+-   **Extensible** - embraces usage of interceptors and middlewares for adding functionality.
+-   **Encoding-agnostic** - Protobuf can be swapped with other serialization formats (ex. JSON).
 
-Using protocol buffers( proto files containing definitions of data structures) to generate both client and server across multiple supported languages.
+## How gRPC differs from REST?
 
--   utilizing http/2
--   bi-directional communication
--   interoperability
--   authorization
--   deadlines and timeouts
--   streaming
--   blocking and non-blocking calls
+Main differences between gRPC and REST are communication models and data transfer formats.
+REST uses variety of HTTP methods and more human-readable format as JSON or XML for data transfer while gRPC uses HTTP/2 protocol and Protobuf for binary data serialization to achieve better performance.
 
 ## When to use it?
 
-Consider using when building systems that should:
+Consider usage of gRPC when building systems that:
 
--   provide low latency
--   be distributed
--   be highly scalable
--   using multiple languages / technologies
+-   should be **distributed**.
+-   should be **highly scalable**.
+-   should provide **low latency**.
+-   are using **multiple languages / technologies**.
+
+## What are the types of communication patterns?
+
+-   **Unary RPC** - Client sends a single request with metadata and waits for a single response.
+-   **Server streaming RPC** - Client sends a single request and server responds with a stream of messages.
+-   **Client streaming RPC** - Client sends a stream of messages and server responds with a single response.
+-   **Bi-directional streaming RPC** - Both client and server concurrently exchanging streams of messages.
+
+## How does gRPC work?
+
+Everything starts with defining a collection of services containing specification of available methods and data structures.
+
+By definition, server implements these services while hosting gRPC server to handle client requests while every client owns a stub that contains the same methods as the server allowing it to make requests.
+
+Requests can set deadlines (also known as timeouts) and can be made synchronously, asynchronously or streamed bidirectionally.
+
+Both client and server can register interceptors to add functionality like authorization or logging while dealing with requests and responses.
+
+![gRPC flow](../../../../assets/gRPC/gRPC.png)
+
+## Best practices
+
+-   **Use Protobuf** - for defining services and messages.
+-   **Reuse stubs and channels** - to reduce usage of new resources.
+-   **Use deadlines** - to prevent hanging requests.
+-   **Use interceptors** - to add functionality like logging or authorization.
+-   **Use streaming** - especially for handling long-lived flows.
+-   **Use keepalive pings** - to keep HTTP/2 connections alive.
+-   **Use health checks** - to monitor the health of the gRPC server.
