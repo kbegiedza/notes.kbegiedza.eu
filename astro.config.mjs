@@ -21,19 +21,29 @@ export default defineConfig({
         lang: 'pl-PL'
       }
     },
-    sidebar: [{
+    sidebar: [
+    {
       label: 'Software Engineer',
       collapsed: true,
       autogenerate: {
         directory: '00-software-engineer'
       }
-    }, {
+    },
+    {
       label: '.NET Engineer',
       collapsed: true,
       autogenerate: {
         directory: '01-dotnet-engineer'
       }
-    }, {
+    },
+    {
+      label: 'Cloud',
+      collapsed: true,
+      autogenerate: {
+        directory: '02-cloud'
+      }
+    },
+    {
       label: 'Reference',
       autogenerate: {
         directory: 'reference'
