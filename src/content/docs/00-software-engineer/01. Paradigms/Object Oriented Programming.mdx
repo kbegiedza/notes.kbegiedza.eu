@@ -1,0 +1,96 @@
+---
+title: Object Oriented Programming
+description: Object Oriented Programming
+---
+
+Object Oriented Programming OOP is programming paradigm based on concept of mapping real world objects to programming objects based on four principles:
+
+1. Abstraction
+2. Encapsulation
+3. Inheritance
+4. Polymorphism
+
+### Abstraction
+
+Abstraction principle means that every object should hide unnecessary details and expose only required, minimal interface to interact with.
+
+```csharp
+public abstract class Monster
+{
+    public abstract void GetDamage(int value);
+}
+```
+
+### Encapsulation
+
+Encapsulation principle relay on hiding internal state of concrete object by utilizing, for example access modifiers.
+
+::::note[Most commonly used access modifiers]
+- public - accessible by everyone
+- private - accessible only by containing class
+- protected - accessible by containing and derived classes
+::::
+
+```csharp
+public abstract class Monster
+{
+    private readonly int _maxHealth;
+
+    private int _health;
+
+    public abstract void GetDamage(int value);
+
+    public int Health
+    {
+        get
+        {
+            //...
+        }
+        protected set
+        {
+            //...
+        }
+      }
+}
+```
+
+### Inheritance
+
+Inheritance principle means ability to extend functionality of previously defined objects.
+
+```csharp
+public class Dragon : Monster
+{
+    public override GetDamage(int value)
+    {
+        //...
+    }
+}
+
+public class Hydra : Monster
+{
+    public override GetDamage(int value)
+    {
+        //...
+    }
+}
+```
+
+### Polymorphism
+
+Polymorphism principle means ability to refer to object by sub-objects.
+
+```csharp
+var monsters = new List<Monster>
+{
+    new Hydra("Hydra"),
+    new Dragon("Lord")
+};
+
+foreach (var monster in monsters)
+{
+    monster.GetDamage(42);
+
+    //...
+}
+```
