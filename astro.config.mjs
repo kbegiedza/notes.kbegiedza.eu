@@ -22,37 +22,68 @@ export default defineConfig({
       }
     },
     sidebar: [
-    {
-      label: 'Software Engineer',
-      collapsed: true,
-      autogenerate: {
-        directory: '00-software-engineer'
-      }
-    },
-    {
-      label: '.NET Engineer',
-      collapsed: true,
-      autogenerate: {
-        directory: '01-dotnet-engineer'
-      }
-    },
-    {
-      label: 'Cloud',
-      collapsed: true,
-      autogenerate: {
-        directory: '02-cloud'
-      }
-    },
-    {
-      label: 'Reference',
-      autogenerate: {
-        directory: 'reference'
-      }
-      // items: [
-      //   // Each item here is one entry in the navigation menu.
-      //   { label: 'Example Guide', link: '/guides/example/' },
-      // ],
-    }],
+      {
+        label: 'Software Engineer',
+        collapsed: true,
+        items: [
+          {
+            label: 'Fundamentals',
+            collapsed: true,
+            autogenerate: {
+              directory: 'software-engineer/fundamentals'
+            }
+          },
+          {
+            label: 'Paradigms',
+            collapsed: true,
+            autogenerate: {
+              directory: 'software-engineer/paradigms'
+            }
+          },
+          {
+            label: 'Principles',
+            collapsed: true,
+            autogenerate: {
+              directory: 'software-engineer/principles'
+            }
+          },
+          {
+            label: 'Data Structures & Algorithms',
+            collapsed: true,
+            autogenerate: {
+              directory: 'software-engineer/data-structures-and-algorithms'
+            }
+          },
+          {
+            label: 'Communication',
+            collapsed: true,
+            autogenerate: {
+              directory: 'software-engineer/communication'
+            }
+          }
+        ]
+      },
+      // {
+      //   label: '.NET Engineer',
+      //   collapsed: true,
+      //   autogenerate: {
+      //     directory: 'dotnet-engineer'
+      //   }
+      // },
+      {
+        label: 'Cloud',
+        collapsed: true,
+        autogenerate: {
+          directory: 'cloud'
+        }
+      },
+      // {
+      //   label: 'Reference',
+      //   autogenerate: {
+      //     directory: 'reference'
+      //   }
+      // }
+    ],
     customCss: ['./src/styles/tailwind.css']
   }), tailwind({
     applyBaseStyles: false
