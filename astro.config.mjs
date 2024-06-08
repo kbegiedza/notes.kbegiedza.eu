@@ -71,6 +71,13 @@ export default defineConfig({
       //   }
       // },
       {
+        label: 'Frontend Engineer',
+        collapsed: true,
+        autogenerate: {
+          directory: 'frontend-engineer'
+        }
+      },
+      {
         label: 'Cloud',
         collapsed: true,
         autogenerate: {
