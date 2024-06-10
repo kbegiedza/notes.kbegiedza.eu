@@ -3,6 +3,9 @@
         "*.md": "markdown",
         "*.mdx": "markdown"
     },
-    "cSpell.words": ["kbegiedza"],
+    "cSpell.words": [
+        "Denormalization",
+        "kbegiedza"
+    ],
     "[markdown]": {}
 }

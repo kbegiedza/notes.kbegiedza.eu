@@ -60,6 +60,20 @@ export default defineConfig({
             autogenerate: {
               directory: 'software-engineer/communication'
             }
+          },
+          {
+            label: 'Databases',
+            collapsed: true,
+            autogenerate: {
+              directory: 'software-engineer/databases'
+            }
+          },
+          {
+            label: 'Design & Architecture',
+            collapsed: true,
+            autogenerate: {
+              directory: 'software-engineer/design-and-architecture'
+            }
           }
         ]
       },
