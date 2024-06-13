@@ -1,0 +1,17 @@
+---
+title: 'Caching'
+---
+
+::::tip
+Purpose of caching is to reduce time required to obtain resources.
+
+**Most popular strategies:**
+- Cache-aside - application is responsible for cache and database synchronization.
+- Cache-through - application is using cache, cache is responsible for synchronization.
+- Cache-behind - application is using cache and publishes message onto queue.
+- Cache-ahead - application is using cache, cache is automatically fetching data from database.
+::::
+
+### Caching strategies
+
+![Caching](../../../../assets/caching.png)

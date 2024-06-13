@@ -60,6 +60,20 @@ export default defineConfig({
             autogenerate: {
               directory: 'software-engineer/communication'
             }
+          },
+          {
+            label: 'Databases',
+            collapsed: true,
+            autogenerate: {
+              directory: 'software-engineer/databases'
+            }
+          },
+          {
+            label: 'Design & Architecture',
+            collapsed: true,
+            autogenerate: {
+              directory: 'software-engineer/design-and-architecture'
+            }
           }
         ]
       },
@@ -70,6 +84,13 @@ export default defineConfig({
       //     directory: 'dotnet-engineer'
       //   }
       // },
+      {
+        label: 'Frontend Engineer',
+        collapsed: true,
+        autogenerate: {
+          directory: 'frontend-engineer'
+        }
+      },
       {
         label: 'Cloud',
         collapsed: true,
