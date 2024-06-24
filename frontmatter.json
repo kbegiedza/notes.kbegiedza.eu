@@ -11,5 +11,5 @@
     ".frontmatter/starlight/pagefolders.json",
     ".frontmatter/starlight/aside.json"
   ],
-  "frontMatter.git.enabled": true
+  "frontMatter.git.enabled": false
 }
