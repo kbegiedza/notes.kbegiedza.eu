@@ -27,6 +27,11 @@ export default defineConfig({
         collapsed: true,
         items: [
           {
+            label: 'Introduction',
+            collapsed: true,
+            link: '/software-engineer/introduction'
+          },
+          {
             label: 'Fundamentals',
             collapsed: true,
             autogenerate: {
