@@ -60,6 +60,23 @@ export default defineConfig({
             }
           },
           {
+            label: 'Software Design & Architecture',
+            collapsed: true,
+            items: [
+              {
+                label: 'Introduction',
+                link: '/software-engineer/software-design/introduction'
+              },
+              {
+                label: 'Design Patterns',
+                collapsed: true,
+                autogenerate: {
+                  directory: 'software-engineer/software-design/design-patterns'
+                }
+              },
+            ]
+          },
+          {
             label: 'Communication',
             collapsed: true,
             autogenerate: {
@@ -74,10 +91,10 @@ export default defineConfig({
             }
           },
           {
-            label: 'Design & Architecture',
+            label: 'System Design',
             collapsed: true,
             autogenerate: {
-              directory: 'software-engineer/design-and-architecture'
+              directory: 'software-engineer/system-design'
             }
           }
         ]

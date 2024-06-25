@@ -4,6 +4,8 @@
         "*.mdx": "markdown"
     },
     "cSpell.words": [
+        "Behavioural",
+        "Creational",
         "Denormalization",
         "kbegiedza"
     ],
