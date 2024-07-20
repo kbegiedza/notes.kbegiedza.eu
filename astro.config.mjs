@@ -70,9 +70,40 @@ export default defineConfig({
               {
                 label: 'Design Patterns',
                 collapsed: true,
-                autogenerate: {
-                  directory: 'software-engineer/software-design/design-patterns'
-                }
+                items: [
+                  {
+                    label: 'Introduction',
+                    link: '/software-engineer/software-design/design-patterns/introduction'
+                  },
+                  {
+                    label: 'Architectural',
+                    collapsed: true,
+                    autogenerate: {
+                      directory: 'software-engineer/software-design/design-patterns/architectural'
+                    }
+                  },
+                  {
+                    label: 'Creational',
+                    collapsed: true,
+                    autogenerate: {
+                      directory: 'software-engineer/software-design/design-patterns/creational'
+                    }
+                  },
+                  {
+                    label: 'Behavioural',
+                    collapsed: true,
+                    autogenerate: {
+                      directory: 'software-engineer/software-design/design-patterns/behavioural'
+                    }
+                  },
+                  {
+                    label: 'Structural',
+                    collapsed: true,
+                    autogenerate: {
+                      directory: 'software-engineer/software-design/design-patterns/structural'
+                    }
+                  },
+                ]
               },
             ]
           },
