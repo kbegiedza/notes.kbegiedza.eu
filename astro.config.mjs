@@ -27,6 +27,11 @@ export default defineConfig({
         collapsed: true,
         items: [
           {
+            label: 'Introduction',
+            collapsed: true,
+            link: '/software-engineer/introduction'
+          },
+          {
             label: 'Fundamentals',
             collapsed: true,
             autogenerate: {
@@ -55,6 +60,54 @@ export default defineConfig({
             }
           },
           {
+            label: 'Software Design & Architecture',
+            collapsed: true,
+            items: [
+              {
+                label: 'Introduction',
+                link: '/software-engineer/software-design/introduction'
+              },
+              {
+                label: 'Design Patterns',
+                collapsed: true,
+                items: [
+                  {
+                    label: 'Introduction',
+                    link: '/software-engineer/software-design/design-patterns/introduction'
+                  },
+                  {
+                    label: 'Architectural',
+                    collapsed: true,
+                    autogenerate: {
+                      directory: 'software-engineer/software-design/design-patterns/architectural'
+                    }
+                  },
+                  {
+                    label: 'Creational',
+                    collapsed: true,
+                    autogenerate: {
+                      directory: 'software-engineer/software-design/design-patterns/creational'
+                    }
+                  },
+                  {
+                    label: 'Behavioural',
+                    collapsed: true,
+                    autogenerate: {
+                      directory: 'software-engineer/software-design/design-patterns/behavioural'
+                    }
+                  },
+                  {
+                    label: 'Structural',
+                    collapsed: true,
+                    autogenerate: {
+                      directory: 'software-engineer/software-design/design-patterns/structural'
+                    }
+                  },
+                ]
+              },
+            ]
+          },
+          {
             label: 'Communication',
             collapsed: true,
             autogenerate: {
@@ -69,10 +122,10 @@ export default defineConfig({
             }
           },
           {
-            label: 'Design & Architecture',
+            label: 'System Design',
             collapsed: true,
             autogenerate: {
-              directory: 'software-engineer/design-and-architecture'
+              directory: 'software-engineer/system-design'
             }
           }
         ]

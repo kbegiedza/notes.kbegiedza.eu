@@ -1,14 +1,15 @@
 {
   "$schema": "https://beta.frontmatter.codes/frontmatter.schema.json",
-  "frontMatter.content.pageFolders": [{
-      "title": "Guides",
-      "path": "[[workspace]]/src/content/docs/guides",
-      "previewPath": "guides"
+  "frontMatter.content.pageFolders": [
+    {
+      "title": "Cloud",
+      "path": "[[workspace]]/src/content/docs/cloud",
+      "previewPath": "cloud"
     },
     {
-      "title": "References",
-      "path": "[[workspace]]/src/content/docs/reference",
-      "previewPath": "reference"
+      "title": "Software Engineer",
+      "path": "[[workspace]]/src/content/docs/software-engineer",
+      "previewPath": "software-engineer"
     }
   ]
 }
