@@ -4,14 +4,14 @@ sidebar:
   order: 0
 ---
 
-### ACID
+## ACID
 
 - **A**tomicity - operations are executed in 'all or nothing' manner.
 - **C**onsistency - read operations always returns latest state of database.
 - **I**solation - concurrent operations will yield the same results like ones executed sequentially.
 - **D**urability - committed operations (and data) are stored persistently.
 
-### Database types
+## Database types
 
 - Relational (SQL)
 - Non-relational (NoSQL)
@@ -19,3 +19,9 @@ sidebar:
   - Document (MongoDB, CouchDB)
   - Multi-model (CosmosDB)
   - Wide-column (BigTable, Cassandra)
+
+## Consistency types
+
+- Strong consistency - all nodes contains the same data at the same time
+- Weak consistency - nodes might have different data at the same time.  
+  Changes are propagated to all nodes in background.
